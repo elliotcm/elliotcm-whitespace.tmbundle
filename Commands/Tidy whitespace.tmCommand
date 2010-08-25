@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+while line = gets
+  puts line.rstrip
+end</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>Tidy whitespace</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>uuid</key>
+	<string>D9BF6D63-1AD2-495A-8396-94A9CB1CB7F5</string>
+</dict>
+</plist>
