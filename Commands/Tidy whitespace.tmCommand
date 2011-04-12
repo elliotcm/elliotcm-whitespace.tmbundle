@@ -10,12 +10,14 @@
 while line = gets
   puts line.rstrip
 end</string>
-	<key>input</key>
+	<key>fallbackInput</key>
 	<string>document</string>
+	<key>input</key>
+	<string>selection</string>
 	<key>name</key>
 	<string>Tidy whitespace</string>
 	<key>output</key>
-	<string>replaceDocument</string>
+	<string> replaceSelectedText</string>
 	<key>uuid</key>
 	<string>D9BF6D63-1AD2-495A-8396-94A9CB1CB7F5</string>
 </dict>
