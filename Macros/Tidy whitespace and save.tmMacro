@@ -12,9 +12,13 @@
 				<key>command</key>
 				<string>#!/usr/bin/env ruby
 
+output = []
 while line = gets
-  puts line.rstrip
-end</string>
+  output &lt;&lt; line.rstrip
+end
+
+print output.join("\n")
+print "\n" if ENV['TM_SELECTED_TEXT'].nil?</string>
 				<key>fallbackInput</key>
 				<string>document</string>
 				<key>input</key>
@@ -24,7 +28,7 @@ end</string>
 				<key>output</key>
 				<string>replaceSelectedText</string>
 				<key>uuid</key>
-				<string>D9BF6D63-1AD2-495A-8396-94A9CB1CB7F5</string>
+				<string>959E1A35-A60E-4728-97DF-C7885EC77639</string>
 			</dict>
 			<key>command</key>
 			<string>executeCommandWithOptions:</string>
@@ -52,6 +56,6 @@ end</string>
 	<key>name</key>
 	<string>Tidy whitespace and save</string>
 	<key>uuid</key>
-	<string>471DF932-452C-4A70-A320-085038CB4CB8</string>
+	<string>8EF31BCF-7414-4AAB-A692-AA11E929468D</string>
 </dict>
 </plist>

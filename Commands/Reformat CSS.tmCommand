@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+target_indent = 24
+
+STDOUT &lt;&lt; STDIN.readlines.map do |line|
+ if line =~ /^\s+([^:]+\:)\s*(.+)\s*$/
+   key, value = $1, $2
+   "  #{key}#{' ' * (target_indent - key.length)}#{value}"
+ else
+   line.chomp
+ end
+end.join("\n")</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@i</string>
+	<key>name</key>
+	<string>Reformat CSS</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>meta.property-value.css</string>
+	<key>uuid</key>
+	<string>A6F85670-3AC3-4D23-9362-BA516506B645</string>
+</dict>
+</plist>
