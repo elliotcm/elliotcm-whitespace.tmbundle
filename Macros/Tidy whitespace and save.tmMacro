@@ -14,11 +14,11 @@
 
 output = []
 while line = gets
-  output &lt;&lt; line.rstrip
+  output &lt;&lt; line.gsub(/\s*?(\n?)$/,'\1')
 end
 
-print output.join("\n")
-print "\n" if ENV['TM_SELECTED_TEXT'].nil?</string>
+print output.join
+</string>
 				<key>fallbackInput</key>
 				<string>document</string>
 				<key>input</key>
